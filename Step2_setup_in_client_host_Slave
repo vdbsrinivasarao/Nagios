@@ -3,7 +3,7 @@ Login to client host and follow the steps
 sudo apt update
 sudo apt install nagios-nrpe-server monitoring-plugins
 cd /etc/nagios/ && vi nrpe.cfg
-   Uncomment the "server_address" line and change the value with the "client01" IP address. >> server_address=<slave private ip>
+   Uncomment the "server_address" line and change the value with the "client01" IP address. >> server_address=<server private ip>
    One the "allowed_hosts" line, add the Nagios Server IP address "maste ip". >> allowed_hosts=127.0.0.1,::1,<master private ip>
    Save and close. 
    
